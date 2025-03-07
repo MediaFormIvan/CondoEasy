@@ -1,0 +1,138 @@
+/* dashboard.css */
+
+/* Impostazioni base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header e Navbar */
+.header-wrapper .navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 70px; /* Assicura un'altezza minima */
+}
+
+.navbar-brand img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+/* Wrapper principale: contiene sidebar e contenuto */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  margin-top: 70px; /* Spazio per evitare che la navbar copra il contenuto */
+}
+
+/* Sidebar personalizzata */
+.sidebar {
+  background-color: #616161;
+  color: #fff;
+  position: fixed;
+  top: 70px; /* Inizia subito sotto la navbar */
+  left: 0;
+  width: 220px;
+  height: calc(100% - 70px); /* Altezza della viewport meno la navbar */
+  padding-top: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  color: #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.sidebar .nav-link i {
+  margin-right: 8px;
+}
+
+/* Contenuto principale: occupa tutto lo spazio disponibile oltre la sidebar */
+.content-area {
+  margin-left: 240px; /* Spazio per la sidebar (220px + margine extra) */
+  padding: 1.5rem;
+  width: calc(100% - 240px); /* Estende il contenuto per l'intera larghezza disponibile */
+}
+
+/* Footer ancorato in fondo alla pagina */
+.footer {
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Pulsanti Neutri Personalizzati */
+.btn-neutral {
+  background-color: #6c757d;  /* Grigio neutro */
+  border-color: #6c757d;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.btn-neutral:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-edit {
+  background-color: #ccbb6a;
+  border: none;
+  color: #fff;
+}
+.btn-detail {
+  background-color: #4c7c7c;
+  border: none;
+  color: #fff;
+}
+.btn-archive {
+  background-color: #7c4040;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-change-state {
+  background-color: #A2D8D7;
+  border: none;
+  color: #fff;
+}
+/* Pulsanti Aggiungi Documento e Invio: usa il blu #5463B7 */
+.btn-custom-blue {
+  background-color: #5463B7 !important;
+  border: none;
+  color: #fff !important;
+}
+
+/* Pulsante Delete per i documenti: usa il rosso #FF5151 */
+.btn-delete-doc {
+  background-color: #FF5151 !important;
+  border: none;
+  color: #fff !important;
+}
+
+/* Assicurati che i pulsanti di Edit utilizzino la classe standard già presente, ad esempio: */
+.btn-edit,
+.btn-edit-doc {
+  /* Questi stili dovrebbero già essere definiti in altre sezioni; ad esempio: */
+  background-color: #ccbb6a; /* oppure il colore usato negli altri edit */
+  border: none;
+  color: #fff;
+}
+

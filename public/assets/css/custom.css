@@ -1,0 +1,13 @@
+/* public/assets/css/custom.css */
+.btn-primary {
+    background-color: #616161;
+    border-color: #616161;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4e4e4e;
+    border-color: #4e4e4e;
+  }
+  
+  /* Puoi aggiungere altre regole se necessario, per esempio per link, bordi, ecc. */
+  
